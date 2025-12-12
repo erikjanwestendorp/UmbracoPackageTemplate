@@ -1,0 +1,25 @@
+{
+  "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json",
+  "AlternativePackageName": "",
+  "Author": {
+    "Name": "AUTHOR_NAME",
+    "Email": "",
+    "Url": "https://github.com/GITHUB_USERNAME"
+  },
+  "Category": "Developer tools",
+  "Description": "PACKAGE_DESCRIPTION",
+  "DocumentationUrl": "https://github.com/GITHUB_USERNAME/GITHUB_REPOSITORY#readme",
+  "IssueTrackerUrl": "https://github.com/GITHUB_USERNAME/GITHUB_REPOSITORY/issues",
+  "LicenseTypes": [
+    {
+      "Name": "MIT",
+      "Url": "https://github.com/GITHUB_USERNAME/GITHUB_REPOSITORY/blob/main/LICENSE"
+    }
+  ],
+  "PackageFile": "",
+  "PackageName": "UmbracoPackage",
+  "RepositoryUrl": "https://github.com/GITHUB_USERNAME/GITHUB_REPOSITORY",
+  "ScreenshotUrls": [],
+  "Tags": [],
+  "Title": "PACKAGE_TITLE"
+}

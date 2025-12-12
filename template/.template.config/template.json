@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json.schemastore.org/template.json",
+  "author": "Erik-Jan Westendorp",
+  "classifications": [
+    "Web",
+    "Umbraco",
+    "Package"
+  ],
+  "name": "Umbraco Community Package Starter",
+  "description": "A solution template for creating an Umbraco package with the structure used in erikjanwestendorp's community packages, including examples and assets",
+  "identity": "Umbraco.Community.Templates.ErikPackageStarter",
+  "shortName": "umbracopackage",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "sourceName": "UmbracoPackage",
+  "defaultName": "UmbracoPackage1",
+  "preferNameDirectory": true,
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": [
+            "**/.git/**",
+            "**/.vs/**",
+            "**/bin/**",
+            "**/obj/**",
+            "examples/**/umbraco/**",
+            "examples/**/.gitignore"
+          ]
+        }
+      ]
+    }
+  ],
+  "guids": [
+    "FAE04EC0-301F-11D3-BF4B-00C04F79EFBC",
+    "2150E333-8FDC-42A3-9474-1A3956D46DE8"
+  ],
+  "symbols": {
+    "authorName": {
+      "description": "The name of the author for the license and NuGet package.",
+      "type": "parameter",
+      "datatype": "string",
+      "replaces": "AUTHOR_NAME",
+      "defaultValue": "Your Name"
+    },
+    "packageDescription": {
+      "description": "The description of the package.",
+      "type": "parameter",
+      "datatype": "string",
+      "replaces": "PACKAGE_DESCRIPTION",
+      "defaultValue": "Description of your Umbraco package"
+    },
+    "githubUser": {
+      "description": "The GitHub username for the repository.",
+      "type": "parameter",
+      "datatype": "string",
+      "replaces": "GITHUB_USERNAME",
+      "fileRename": "GITHUB_USERNAME"
+    },
+    "githubRepo": {
+      "description": "The name of the GitHub repository.",
+      "type": "parameter",
+      "datatype": "string",
+      "replaces": "GITHUB_REPOSITORY",
+      "fileRename": "GITHUB_REPOSITORY"
+    },
+    "packageTitleDerived": {
+      "type": "derived",
+      "valueSource": "name",
+      "replaces": "PACKAGE_TITLE",
+      "valueTransform": "PascalCaseToSpaces"
+    },
+    "packageTitle": {
+      "description": "The title of the package, used in readme headings and on the Umbraco marketplace.",
+      "type": "parameter",
+      "datatype": "string",
+      "replaces": "PACKAGE_TITLE"
+    },
+    "currentYear": {
+      "type": "generated",
+      "generator": "now",
+      "replaces": "CURRENT_YEAR",
+      "parameters": {
+        "format": "yyyy"
+      }
+    },
+    "httpPort": {
+      "type": "generated",
+      "generator": "port",
+      "parameters": {
+        "fallback": 5000
+      },
+      "replaces": "40000"
+    },
+    "httpsPort": {
+      "type": "generated",
+      "generator": "port",
+      "parameters": {
+        "low": 44300,
+        "high": 44399,
+        "fallback": 5001
+      },
+      "replaces": "44300"
+    }
+  },
+  "forms": {
+    "PascalCaseToSpaces": {
+      "identifier": "replace",
+      "pattern": "([A-Z][a-z]+)",
+      "replacement": "$1 "
+    }
+  },
+  "primaryOutputs": [
+    {
+      "path": "src/UmbracoPackage/UmbracoPackage.csproj"
+    },
+    {
+      "path": "examples/UmbracoPackage.Site/UmbracoPackage.Site.csproj"
+    }
+  ],
+  "postActions": [
+    {
+      "description": "Restore NuGet packages referenced in the solution",
+      "manualInstructions": [
+        {
+          "text": "Run 'dotnet restore'"
+        }
+      ],
+      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "continueOnError": true
+    },
+    {
+      "description": "All done! Your Umbraco package template is ready.",
+      "manualInstructions": [{
+        "text": "Open the solution in Visual Studio or your preferred IDE and start developing your Umbraco package!"
+      }],
+      "actionId": "AC1156F7-BB77-4DB8-B28F-24EEBCCA1E5C",
+      "continueOnError": true
+    }
+  ]
+}

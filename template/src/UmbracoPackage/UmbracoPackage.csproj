@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Version>1.0.0</Version>
+		<PackageId>UmbracoPackage</PackageId>
+		<Product>UmbracoPackage</Product>
+		<Title>PACKAGE_TITLE</Title>
+		<Description>PACKAGE_DESCRIPTION</Description>
+		<Authors>AUTHOR_NAME</Authors>
+		<PackageTags>umbraco-marketplace umbraco plugin package</PackageTags>
+		<PackageProjectUrl>https://github.com/GITHUB_USERNAME/GITHUB_REPOSITORY</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/GITHUB_USERNAME/GITHUB_REPOSITORY</RepositoryUrl>
+		<PackageIcon>logo.png</PackageIcon>
+		<RepositoryType>git</RepositoryType>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\assets\logo.png" Pack="true" PackagePath="\" />
+		<None Include="README.md" Pack="true" PackagePath="\" />
+		<None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Umbraco.Cms.Core" Version="[13.0.0, 14.0.0)" />
+	</ItemGroup>
+
+</Project>

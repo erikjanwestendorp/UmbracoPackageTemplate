@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json.schemastore.org/dotnetcli.host",
+  "symbolInfo": {
+    "authorName": {
+      "longName": "author-name",
+      "shortName": "a"
+    },
+    "packageDescription": {
+      "longName": "description",
+      "shortName": "d"
+    },
+    "githubUser": {
+      "longName": "github-user",
+      "shortName": "gu"
+    },
+    "githubRepo": {
+      "longName": "github-repo",
+      "shortName": "gr"
+    },
+    "packageTitle": {
+      "longName": "package-title",
+      "shortName": "pt"
+    }
+  }
+}

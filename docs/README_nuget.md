@@ -2,20 +2,12 @@
 
 A .NET template for creating Umbraco packages with the structure used in erikjanwestendorp's Umbraco community packages.
 
-This template is similar to [LottePitcher's opinionated-package-starter](https://github.com/LottePitcher/opinionated-package-starter) but uses the repository structure found in [erikjanwestendorp's Umbraco community packages](https://github.com/erikjanwestendorp).
-
 ## Installation
 
 Install this template using the .NET CLI:
 
 ```bash
 dotnet new install Umbraco.Community.Templates.ErikPackageStarter
-```
-
-Or from a local path:
-
-```bash
-dotnet new install ./
 ```
 
 ## Usage
@@ -53,7 +45,7 @@ This template creates an Umbraco package with the following structure:
 - **README.md**: Template readme for your package
 - **LICENSE**: MIT license file
 
-## Project Structure
+## Structure
 
 The generated project follows the structure used in erikjanwestendorp's Umbraco community packages:
 
@@ -75,23 +67,21 @@ YourPackageName/
 └── umbraco-marketplace.json
 ```
 
-## Building the Template Package
+## Getting Started
 
-To build and pack this template for distribution:
+After creating your package:
 
-```bash
-dotnet pack template-pack.csproj
-```
+1. Open the solution in Visual Studio or your preferred IDE
+2. Update the logo in the `assets/` directory
+3. Start developing your package in the `src/YourPackageName/` directory
+4. Test your package using the example site in `examples/YourPackageName.Site/`
+5. Update the README.md with details about your package
 
-This will create a NuGet package in the `bin/Release` directory.
+## Links
 
-## Publishing to NuGet
-
-To publish the template to NuGet.org:
-
-```bash
-dotnet nuget push bin/Release/Umbraco.Community.Templates.ErikPackageStarter.*.nupkg --api-key YOUR_API_KEY --source https://api.nuget.org/v3/index.json
-```
+- [GitHub Repository](https://github.com/erikjanwestendorp/UmbracoPackageTemplate)
+- [Umbraco Documentation](https://docs.umbraco.com/)
+- [Umbraco Marketplace](https://marketplace.umbraco.com/)
 
 ## License
 
