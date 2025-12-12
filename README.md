@@ -4,6 +4,10 @@ A .NET template for creating Umbraco packages with the structure used in erikjan
 
 This template is similar to [LottePitcher's opinionated-package-starter](https://github.com/LottePitcher/opinionated-package-starter) but uses the repository structure found in [erikjanwestendorp's Umbraco community packages](https://github.com/erikjanwestendorp).
 
+## Quick Start
+
+See [Getting Started Guide](docs/GETTING_STARTED.md) for detailed instructions.
+
 ## Installation
 
 Install this template using the .NET CLI:
