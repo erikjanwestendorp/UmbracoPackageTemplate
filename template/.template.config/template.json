@@ -108,8 +108,8 @@
   "forms": {
     "PascalCaseToSpaces": {
       "identifier": "replace",
-      "pattern": "([A-Z][a-z]+)",
-      "replacement": "$1 "
+      "pattern": "([a-z0-9])([A-Z])",
+      "replacement": "$1 $2"
     }
   },
   "primaryOutputs": [
