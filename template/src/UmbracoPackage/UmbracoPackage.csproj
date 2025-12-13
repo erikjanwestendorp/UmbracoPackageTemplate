@@ -32,4 +32,8 @@
 		<PackageReference Include="Umbraco.Cms.Core" Version="[14.0.0, 15.0.0)" />
 	</ItemGroup>
 
+	<ItemGroup>
+		<ProjectReference Include="..\UmbracoPackage.Assets\UmbracoPackage.Assets.csproj" />
+	</ItemGroup>
+
 </Project>

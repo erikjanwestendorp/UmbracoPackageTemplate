@@ -1,0 +1,13 @@
+{
+  "$schema": "../../umbraco-package-schema.json",
+  "name": "UmbracoPackage",
+  "version": "1.0.0",
+  "extensions": [
+    {
+      "type": "bundle",
+      "alias": "UmbracoPackage.Bundle",
+      "name": "UmbracoPackage Bundle",
+      "js": "/App_Plugins/UmbracoPackage/umbraco-package.js"
+    }
+  ]
+}

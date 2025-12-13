@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<StaticWebAssetBasePath>App_Plugins/UmbracoPackage</StaticWebAssetBasePath>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Version>1.0.0</Version>
+		<PackageId>UmbracoPackage.Assets</PackageId>
+		<Product>UmbracoPackage.Assets</Product>
+		<Title>UmbracoPackage Assets</Title>
+		<Description>Contains the static assets needed to run UmbracoPackage</Description>
+		<Authors>AUTHOR_NAME</Authors>
+		<PackageTags>umbraco plugin package</PackageTags>
+		<PackageIcon>logo.png</PackageIcon>
+		<PackageProjectUrl>https://github.com/GITHUB_USERNAME/GITHUB_REPOSITORY</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/GITHUB_USERNAME/GITHUB_REPOSITORY</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\assets\logo.png" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<SupportedPlatform Include="browser" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.0" />
+	</ItemGroup>
+
+</Project>

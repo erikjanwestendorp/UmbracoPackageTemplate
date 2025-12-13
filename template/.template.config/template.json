@@ -26,6 +26,8 @@
             "**/.vs/**",
             "**/bin/**",
             "**/obj/**",
+            "**/node_modules/**",
+            "**/dist/**",
             "examples/**/umbraco/**",
             "examples/**/.gitignore"
           ]
@@ -35,6 +37,7 @@
   ],
   "guids": [
     "FAE04EC0-301F-11D3-BF4B-00C04F79EFBC",
+    "FAE04EC0-301F-11D3-BF4B-00C04F79EFBE",
     "2150E333-8FDC-42A3-9474-1A3956D46DE8"
   ],
   "symbols": {
@@ -115,6 +118,9 @@
   "primaryOutputs": [
     {
       "path": "src/UmbracoPackage/UmbracoPackage.csproj"
+    },
+    {
+      "path": "src/UmbracoPackage.Assets/UmbracoPackage.Assets.csproj"
     },
     {
       "path": "examples/UmbracoPackage.Site/UmbracoPackage.Site.csproj"
