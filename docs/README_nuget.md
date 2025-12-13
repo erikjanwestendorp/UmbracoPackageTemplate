@@ -37,7 +37,10 @@ dotnet new umbracopackage -n Umbraco.Community.MyPackage -a "John Doe" -d "My aw
 
 This template creates an Umbraco package with the following structure:
 
-- **src/**: Contains the main package project
+- **src/**: Contains three projects:
+  - **YourPackage/**: Main C# package code
+  - **YourPackage.Assets/**: Razor SDK project for serving frontend assets
+  - **YourPackage.Client/**: TypeScript/Vite project for building frontend code
 - **examples/**: Contains an example Umbraco site for testing the package
 - **assets/**: For logos and other assets
 - **.github/workflows/**: Pre-configured GitHub Actions for build and publish
@@ -60,7 +63,9 @@ YourPackageName/
 ├── examples/
 │   └── YourPackageName.Site/
 ├── src/
-│   └── YourPackageName/
+│   ├── YourPackageName/           # Main C# package
+│   ├── YourPackageName.Assets/    # Frontend assets (wwwroot)
+│   └── YourPackageName.Client/    # TypeScript/Vite frontend project
 ├── LICENSE
 ├── README.md
 ├── YourPackageName.sln

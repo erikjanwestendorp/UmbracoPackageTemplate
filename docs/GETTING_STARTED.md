@@ -66,6 +66,24 @@ src/Umbraco.Community.MyAwesomePackage/
 └── Models/               # Add your models
 ```
 
+### Add Frontend Code
+If you need to extend the Umbraco backoffice, use the Client project:
+
+```bash
+cd src/Umbraco.Community.MyAwesomePackage.Client
+npm install
+npm run dev    # Development mode
+npm run build  # Production build
+```
+
+The Client project uses:
+- **Vite** for fast development and building
+- **TypeScript** for type-safe code
+- **Lit** for web components
+- **Umbraco Backoffice** package for types and APIs
+
+Built assets are automatically placed in the Assets project's `wwwroot` folder.
+
 ### Update Documentation
 - Update `README.md` with usage instructions
 - Update `src/Umbraco.Community.MyAwesomePackage/README.md` for NuGet
