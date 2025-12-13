@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  build: {    
+  build: {
     lib: {
       entry: "src/bundle.manifests.ts",
       formats: ["es"],
